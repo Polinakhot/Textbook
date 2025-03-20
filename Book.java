@@ -5,7 +5,8 @@ public class Book
 
     public Book(String bookTitle, double bookPrice)
     {
-        //create a new book with given title and price 
+        title = bookTitle;
+        price = bookPrice;  
     }
 
     public String getTitle()
@@ -15,8 +16,7 @@ public class Book
 
     public String getBookInfo()
     {
-        return super.getBookInfo() + "-" + edition;
+        return title + "-" + price;
     }
 
- 
 }
